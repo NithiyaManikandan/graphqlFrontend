@@ -9,7 +9,7 @@ Genre : <input #genre type="text">
   <li *ngFor="let book of books |async">
     &nbsp;
     {{book.name}} , {{book.genre}} &nbsp;&nbsp;&nbsp;
-    <button (click)="delete(book._id)">delete</button>&nbsp;&nbsp;
+    <button (click)="deleteBook(book._id)">delete</button>&nbsp;&nbsp;
     <!-- <button (click)="update(book._id)">update</button> -->
   </li>
 </div>

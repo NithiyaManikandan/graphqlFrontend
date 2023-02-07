@@ -80,7 +80,7 @@ export class AppComponent implements OnInit {
       });
   }
 
-  delete(id: string) {
+  deleteBook(id: string) {
     this.apollo
       .mutate({
         mutation: DELETE_BOOK,
